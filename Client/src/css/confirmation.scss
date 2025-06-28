@@ -1,0 +1,56 @@
+@import "./index.scss";
+
+.background-container {
+  background-color: rgba(0, 0, 0, 0.541);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+}
+
+.container-confirmation {
+  display: flex;
+  box-shadow: 0 5px 15px 20px rgba(0, 0, 0, 0.377);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 20rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25rem;
+  height: 25rem;
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  z-index: 10;
+  & .answer {
+    display: flex;
+    justify-content: space-evenly;
+
+    & .check {
+      padding: 5px 30px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.301);
+      cursor: pointer;
+    }
+    & .yes {
+      transition: 0.2s;
+      background-color: rgb(8, 158, 8);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    & .no {
+      transition: 0.2s;
+      background-color: rgb(182, 0, 0);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

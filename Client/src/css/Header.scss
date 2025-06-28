@@ -1,0 +1,51 @@
+@import "./index.scss";
+
+.header.scrollando {
+  background-color: rgba(0, 0, 0, 0.658);
+  backdrop-filter: blur(1px);
+  &.claro {
+    background-color: rgba(255, 255, 255, 0.623);
+    box-shadow: 0 5px 10px rgba(104, 104, 104, 0.568);
+  }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+  height: 5rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.281);
+  z-index: 100;
+  transition: 0.1s ease-out;
+  & .header-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Poppins", "Helvetica";
+    & .lado-esquerdo {
+      font-size: 20px;
+      font-weight: 700;
+      flex: 1;
+      text-align: center;
+    }
+    & .lado-direito {
+      font-weight: 600;
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    & .lado-direito-tema {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      &:active {
+        filter: brightness(2);
+      }
+    }
+  }
+}

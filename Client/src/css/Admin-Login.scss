@@ -1,0 +1,68 @@
+@import "./index.scss";
+
+.everything {
+  display: flex;
+
+  min-height: 50rem;
+  & main {
+    min-height: 50rem;
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    & .admin-content {
+      border-radius: 10px;
+      box-shadow: 0 6px 10px 10px rgba(0, 0, 0, 0.425);
+      background-color: var(--cor-principal);
+      color: var(--cor-secundaria);
+      padding: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      & .admin-login-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        & form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          & input {
+            border: 2px solid var(--cor-secundaria);
+            background-color: var(--cor-principal);
+            padding: 2px 5px;
+            border-radius: 5px;
+          }
+          & button {
+            padding: 0 20px;
+            border: none;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-principal);
+            border-radius: 10px;
+            transition: 0.1s;
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.1);
+            }
+            &:active {
+              transform: scale(1.07);
+              background-color: purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  & aside {
+    min-height: 50rem;
+    width: 60%;
+    background: url(../assets/bg3.jpg);
+    background-size: cover;
+  }
+}

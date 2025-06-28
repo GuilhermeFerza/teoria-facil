@@ -1,0 +1,15 @@
+@import "./index.scss";
+
+.footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  font-family: "Poppins", "Helvetica";
+  background-color: rgb(63, 63, 63);
+  color: #ccc;
+  z-index: 10;
+}
