@@ -1,0 +1,18 @@
+# Ignorar node_modules em qualquer lugar
+**/node_modules
+
+# Ignorar arquivos de ambiente em qualquer lugar
+**/.env
+
+# Ignorar pastas de build
+**/build
+**/dist
+**/coverage
+
+# Arquivos do sistemagit commit -m "feat: adição de backend early stage"
+.DS_Store
+
+# Cache do Vite, pnpm, etc
+.pnpm-store
+.pnpm
+*.log

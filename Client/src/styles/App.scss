@@ -1,0 +1,156 @@
+@import "./index.scss";
+
+.bg-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/orch.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  pointer-events: none; /* para não interferir no clique */
+  will-change: transform;
+}
+
+.block {
+  position: absolute;
+  height: 5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: var(--cor-principal);
+}
+
+main {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  display: flex;
+  flex-direction: column;
+  & hr {
+    height: 2px;
+    border: none;
+    width: 100vw;
+    background-color: purple;
+  }
+  & #home {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    background: url(../assets/bg1.jpg);
+    background-size: cover;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--cor-principal);
+      opacity: 30%;
+      z-index: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      backdrop-filter: saturate(0.1);
+      z-index: 0;
+    }
+    & .home-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: white;
+      & .texto1 {
+        font-family: "Poppins", "Helvetica";
+        text-align: center;
+        & h2 {
+          font-size: 18px;
+        }
+        & span {
+          color: rgb(255, 43, 241);
+          font-weight: 700;
+          font-style: oblique;
+        }
+      }
+      & .img {
+        height: 220px;
+        width: 350px;
+        border-radius: 20px;
+        overflow: hidden;
+        object-fit: cover;
+        & img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  & #gerador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 50vh;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--cor-principal);
+      opacity: 30%;
+      z-index: 0;
+    }
+  }
+  & #about {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 60px 20px;
+    background: url(../assets/bg3.jpg);
+    background-size: cover;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: var(--cor-principal);
+      opacity: 30%;
+      z-index: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      backdrop-filter: saturate(0.2) blur(2px) brightness(0.2);
+      z-index: 0;
+    }
+    & .about-content {
+      color: white;
+      font-family: "Poppins", "Helvetica";
+      text-align: center;
+    }
+  }
+  #blog {
+    padding: 60px 20px;
+  }
+}

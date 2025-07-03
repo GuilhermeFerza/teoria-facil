@@ -1,0 +1,48 @@
+{
+  "Maior": {
+    "C": ["C", "Dm", "Em", "F", "G", "Am", "Bº"],
+    "D": ["D", "Em", "F#m", "G", "A", "Bm", "C#º"],
+    "E": ["E", "F#m", "G#m", "A", "B", "C#m", "D#º"],
+    "F": ["F", "Gm", "Am", "Bb", "C", "Dm", "Eº"],
+    "G": ["G", "Am", "Bm", "C", "D", "Em", "F#º"],
+    "A": ["A", "Bm", "C#m", "D", "E", "F#m", "G#º"],
+    "B": ["B", "C#m", "D#m", "E", "F#", "G#m", "A#º"]
+  },
+  "Menor": {
+    "C": ["Cm", "Dº", "Eb", "Fm", "Gm", "Ab", "Bb"],
+    "D": ["Dm", "Eº", "F", "Gm", "Am", "Bb", "C"],
+    "E": ["Em", "F#º", "G", "Am", "Bm", "C", "D"],
+    "F": ["Fm", "Gº", "Ab", "Bbm", "Cm", "Db", "Eb"],
+    "G": ["Gm", "Aº", "Bb", "Cm", "Dm", "Eb", "F"],
+    "A": ["Am", "Bº", "C", "Dm", "Em", "F", "G"],
+    "B": ["Bm", "C#º", "D", "Em", "F#m", "G", "A"]
+  },
+  "Pentatonica Maior": {
+    "C": ["C", "Dm", "Em", "G", "Am"],
+    "D": ["D", "Em", "F#m", "A", "Bm"],
+    "E": ["E", "F#m", "G#m", "B", "C#m"],
+    "F": ["F", "Gm", "Am", "C", "Dm"],
+    "G": ["G", "Am", "Bm", "D", "Em"],
+    "A": ["A", "Bm", "C#m", "E", "F#m"],
+    "B": ["B", "C#m", "D#m", "F#", "G#m"]
+  },
+  "Pentatonica Menor": {
+  "C": ["Cm", "Eb", "Fm", "Gm", "Bb"],
+  "D": ["Dm", "F", "Gm", "Am", "C"],
+  "E": ["Em", "G", "Am", "Bm", "D"],
+  "F": ["Fm", "Ab", "Bbm", "Cm", "Eb"],
+  "G": ["Gm", "Bb", "Cm", "Dm", "F"],
+  "A": ["Am", "C", "Dm", "Em", "G"],
+  "B": ["Bm", "D", "Em", "F#m", "A"]
+},
+"Escala Blues": {
+  "C": ["Cm", "Ebm", "F", "Gb", "Gm", "Bbm"],
+  "D": ["Dm", "F", "G", "Ab", "Am", "C"],
+  "E": ["Em", "G", "A", "Bb", "Bm", "D"],
+  "F": ["Fm", "Ab", "Bb", "B", "Cm", "Eb"],
+  "G": ["Gm", "Bb", "C", "Db", "Dm", "F"],
+  "A": ["Am", "C", "D", "D#", "Em", "G"],
+  "B": ["Bm", "D", "E", "F", "F#m", "A"]
+}
+
+}
